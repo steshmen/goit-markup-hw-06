@@ -677,9 +677,6 @@ address {
     color: var(--secondary-txt-color);
     margin-bottom: 10px;
 }
-.modal-form-label.label-textarea {
-    margin-bottom: 20px;
-}
 .modal-form-label-text {
     font-weight: 400;
     font-size: 12px;
@@ -724,6 +721,7 @@ address {
     height: 120px;
     padding: 12px 16px;
     margin-top: 4px;
+    margin-bottom: 0;
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -744,13 +742,19 @@ address {
 }
 .modal-form-checkbox-wripper {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 .modal-form-label-checkbox {
     font-weight: 400;
     line-height: 2;
     color: var(--secondary-txt-color);
-    display: flex;
-    align-items: center;
+}
+.modal-form-checkbox-link {
+    color: var(--accent-color);
+    font-weight: 400;
+    line-height: 2;
+    margin-left: 4px;
 }
 .modal-form-label-checkbox::before {
     content: "";
@@ -761,12 +765,6 @@ address {
     cursor: pointer;
     margin-right: 8px;
     transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-form-checkbox-link {
-    color: var(--accent-color);
-    font-weight: 400;
-    line-height: 2;
-    margin-left: 4px;
 }
 .modal-form-input-checkbox:checked + 
 .modal-form-label-checkbox::before {
